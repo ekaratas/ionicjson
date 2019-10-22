@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-list>
+    <ion-item *ngFor="let arac of aracservis.araclar" (click)="git(arac.id)">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="arac.resim"></ion-img>
+      </ion-thumbnail>
+      <ion-label>{{arac.ad}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
